@@ -1,9 +1,19 @@
-var a = 1;
-let b = 2;
-const c = 3;
+// var x; // hoisting
+// if (true) {
+//     a = 100;
+//     console.log(a);
+// }
+// block scoped
+// console.log(a);
+// const a = 1;
+// var a;
+// console.log(x);
+// var x = 10;
+// baz(); // TypeError: baz is not a function
 
-a = 10;
-b = 20;
-c = 30;
+var baz = function() {
+  console.log('bar2');
+};
 
-console.log(a, b, c);
+baz();
+console.log(typeof (1 + ''));
